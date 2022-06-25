@@ -4,6 +4,7 @@ cd spring-soap-ws
 
 
 Create the JAR deployable for the app.
+mvn clean install -DskipTests
 mvn -DskipTests package
 
 Enable Container Registry to store the container image that you'll create.
