@@ -1,0 +1,14 @@
+git clone https://github.com/mrayandutta/spring-soap-ws.git
+cd spring-soap-ws
+
+
+
+Create the JAR deployable for the app.
+mvn -DskipTests package
+
+Enable Container Registry to store the container image that you'll create.
+gcloud services enable containerregistry.googleapis.com
+
+Use Jib to create the container image and push it to the Container Registry.
+mvn -DskipTests com.google.cloud.tools:jib-maven-plugin:build \
+  -Dimage=gcr.io/$GOOGLE_CLOUD_PROJECT/hello-java:v1
