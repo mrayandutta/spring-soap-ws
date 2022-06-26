@@ -1,4 +1,4 @@
-package com.example.howtodoinjava.springbootsoapservice;
+package com.springboot.soapws;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -8,7 +8,7 @@ import javax.annotation.PostConstruct;
 import org.springframework.stereotype.Component;
 import org.springframework.util.Assert;
 
-import com.howtodoinjava.xml.school.Student;
+import com.springboot.soapws.model.Student;
 
 @Component
 public class StudentRepository {

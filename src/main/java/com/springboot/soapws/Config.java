@@ -1,4 +1,4 @@
-package com.example.howtodoinjava.springbootsoapservice;
+package com.springboot.soapws;
 
 import org.springframework.boot.web.servlet.ServletRegistrationBean;
 import org.springframework.context.ApplicationContext;
@@ -28,7 +28,7 @@ public class Config extends WsConfigurerAdapter {
 		DefaultWsdl11Definition wsdl11Definition = new DefaultWsdl11Definition();
 		wsdl11Definition.setPortTypeName("StudentDetailsPort");
 		wsdl11Definition.setLocationUri("/service/student-details");
-		wsdl11Definition.setTargetNamespace("http://www.howtodoinjava.com/xml/school");
+		wsdl11Definition.setTargetNamespace("http://www.springboot.com/soapws/model");
 		wsdl11Definition.setSchema(schema);
 		return wsdl11Definition;
 	}

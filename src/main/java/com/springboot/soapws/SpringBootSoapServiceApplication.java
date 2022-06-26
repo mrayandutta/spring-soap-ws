@@ -1,4 +1,4 @@
-package com.example.howtodoinjava.springbootsoapservice;
+package com.springboot.soapws;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
